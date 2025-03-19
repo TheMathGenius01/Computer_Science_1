@@ -1,0 +1,62 @@
+import org.junit.Before;
+import org.junit.Test;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
+public class NumberTest {
+
+    @Test
+    public void Test01() {
+        long result = Number.factorial(5);
+        assertEquals(120, result);
+    }
+
+    @Test
+    public void Test02() {
+        int result = Number.GCD(100, 24);
+        assertEquals(4, result);
+    }
+
+    @Test
+    public void Test03() {
+        int result = Number.sumEvens(1, 10);
+        assertEquals(30, result);
+    }
+
+    @Test
+    public void Test04() {
+        int result = Number.sumFactors(8);
+        assertEquals(15, result);
+    }
+
+    @Test
+    public void Tes05() {
+        int result = Number.sumSquares(10);
+        assertEquals(385, result);
+    }
+
+    @Test
+    public void Test06() {
+        boolean result = Number.isPrime(501);
+        assertEquals(false, result);
+    }
+    
+
+    @Test
+    public void Test08() {
+        double result = Number.calculatePI(1);
+        assertEquals(4, result, .0000000001);
+    }
+
+    @Test
+    public void Test09() {
+        boolean result = Number.isPerfect(6);
+        assertEquals(true, result);
+    }
+    
+}

@@ -1,0 +1,85 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+
+public class IntegerTest {
+
+    @Test
+    public void Test01() {
+        Integer test = new Integer(13756);
+        int result = test.getN();
+        assertEquals(13756, result);
+    }
+
+    @Test
+    public void Test02() {
+        Integer test = new Integer(13756);
+        int result = test.digitCount();
+        assertEquals(5, result);
+    }
+
+
+    @Test
+    public void Test03() {
+        Integer test = new Integer(9912);
+        int result = test.digitSum();
+        assertEquals(21, result);
+    }
+
+
+    @Test
+    public void Test04() {
+        Integer test = new Integer(1252);
+        double result = test.digitAverage();
+        assertEquals(2.5, result, .0000001);
+    }
+
+    @Test
+    public void Test05() {
+        Integer test = new Integer(123456789);
+        int result = test.digitDivisorSum();
+        assertEquals(13, result);
+    }
+
+    @Test
+    public void Test06() {
+        Integer test = new Integer(2240108);
+        int result = test.reverse();
+        assertEquals(8010422, result);
+    }
+
+
+
+    @Test
+    public void Test07() {
+        Integer test = new Integer(77778);
+        long result = test.toBase(9);
+        assertEquals(127620, result);
+    }
+
+
+    @Test
+    public void Test08() {
+        Integer test = new Integer(63);
+        int result = test.populationCount();
+        assertEquals(6, result);
+    }
+
+
+
+    @Test
+    public void Test09() {
+        Integer test = new Integer(592);
+        boolean result = test.isOdious();
+        assertEquals(true, result);
+    }
+    
+
+    @Test
+    public void Test10() {
+        Integer test = new Integer(592);
+        boolean result = test.isEvil();
+        assertEquals(false, result);
+    }
+
+}

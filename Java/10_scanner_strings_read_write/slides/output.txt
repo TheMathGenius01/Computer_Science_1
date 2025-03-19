@@ -1,0 +1,3 @@
+How many numbers ::
+Enter 10 numbers
+total == 55
